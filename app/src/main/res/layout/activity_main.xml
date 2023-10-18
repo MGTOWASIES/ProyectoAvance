@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:stretchColumns="*">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/header_shape"
+                    android:gravity="center"
+                    android:text="Indice"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/header_shape"
+                    android:gravity="center"
+                    android:text="N casa"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/header_shape"
+                    android:gravity="center"
+                    android:text="MDU"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/header_shape"
+                    android:gravity="center"
+                    android:text="PISO"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/header_shape"
+                    android:gravity="center"
+                    android:text="ESTADO"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Area Casa"
+                    android:gravity="center"
+                    android:background="@drawable/header_shape"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Area Cochera"
+                    android:gravity="center"
+                    android:background="@drawable/header_shape"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Area Total"
+                    android:gravity="center"
+                    android:background="@drawable/header_shape"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Participacion"
+                    android:gravity="center"
+                    android:background="@drawable/header_shape"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/cell_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollview">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/header_shape"
+                    android:text="Datos Predio">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/IndiceEditText"
+                    android:layout_width="250dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:hint="Indice"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/NCasaEditText"
+                    android:layout_width="250dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:hint="NCasa"
+                    android:inputType="phone"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/MDUEditText"
+                    android:layout_width="250dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:hint="MDU"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/pisoEditText"
+                    android:layout_width="250dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:hint="Piso"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/estadoEditText"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:hint="Estado"
+                    android:inputType="phone"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/areaCasaEditText"
+                    android:layout_width="250dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:hint="A Casa"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/areaCocheraEditText"
+                    android:layout_width="250dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:hint="A cochera"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/AtotalEditText"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:hint="A total"
+                    android:background="@drawable/cell_shape"
+                    android:inputType="phone"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/participacionEditText"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:hint="Participacion"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descargar"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compartir"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Agregar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="546dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
